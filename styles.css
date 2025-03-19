@@ -1,0 +1,188 @@
+table{
+    background-color: white;
+    color: black;
+}
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    
+}
+
+.cert-grid, iframe, img {
+    width: 96%;
+    height: 300px;
+    
+}
+
+
+
+div.middlebar{
+    text-align: center;
+    animation: inslide 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    left: 1000px;
+    position: relative;
+}
+
+div.middlebar > a{
+    font-size: 30px;
+}
+
+body{
+    background-color: black;
+    animation: unblur 0.25s;
+}
+div.hidden{
+    width: 100%;
+    height: 90px;
+    left: 10000px;
+    transition: height 1s;
+    position: relative;
+    animation: inslide 1s;
+    animation-timing-function: ease-out;
+    white-space: nowrap;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    text-align: center;
+}
+div.hidden:active, div.hidden:focus{
+    height: 400px;
+}
+div.hiddenBig{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    animation: inslide 2s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+@keyframes unblur{
+    from{
+        filter: brightness(2%);
+    }
+    to{
+        filter: brightness(100%);
+    }
+}
+
+@keyframes inslide{
+    from{
+        left: 1000px;
+    }
+    to{
+        left: 0px;
+    }
+}
+
+div.pictureHeader{
+    
+    padding-top: 0.01px;
+    margin-top: 0px;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background-image:url(https://codehs.com/uploads/afc043a45ae0bb46db7cb3dca8841bd4);
+    background-position: 50% 30%;
+    background-size: 100%;
+    transition: height 2s, filter 2s;
+    background-repeat:repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+div.body:hover{
+    height: 500px;
+}
+div.body{
+    padding-top: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color:#ff002a;
+    height: 100px;
+    text-overflow: ellipsis;
+    transition: height 2s;
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+div.pictureHeader:hover{
+    height: 250px;
+}
+div > h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 100px;
+    color: white;
+    font-family: Courier;
+    animation: inslide 1s;
+    position: relative;
+    left: 0px;
+}
+img{
+    width: auto;
+    margin: auto;
+}
+p{
+    font-size: 50px;
+    color: orange;
+    font-family: Courier;
+    text-align: center;
+    transition: font-size 1s;
+    animation: inslide 1s;
+    position: relative;
+    left: 0px;
+}
+p1{
+    font-size: 50px;
+    color: #fc032c;
+    font-family: Verdana;
+    transition: font-size 1s;
+}
+div.main > h1{
+    color: white;
+    font-family: Courier;
+    font-size: 75px;
+    text-align: center;
+    top: 0;
+    background-color: black;
+    animation: inslide 1s;
+    position: relative;
+    left: 0px;
+}
+a{
+    text-decoration: none;
+    color: orange;
+    font-family: courier;
+    transition: color 1s, font-size 1s;
+    font-size: 45px;
+}
+a:hover{
+    font-size: 50px;
+    text-decoration: none;
+    color: red;
+}
+ul{
+    font-size: 40px;
+    font-family: Courier;
+    color: orange;
+    list-style-type: square;
+    margin-left: 40px;
+    animation: inslide 1s;
+    position: relative;
+    left: 0px;
+}
+div.body p:hover{
+    font-size: 60px;
+}
+div.body p{
+    color: white;
+}
+div.body p1:hover{
+    font-size: 60px;
